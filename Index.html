@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Minero de la Cueva Naranja</title>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN FIJO -->
+    <header>
+        <nav>
+            <div>
+                <!-- Logo con pico de minero -->
+                <span>⛏️ EL MINERO</span>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#capitulo1">Historia</a></li>
+                <li><a href="#capitulo3">Aventura</a></li>
+                <li><a href="#final">Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN 1: INICIO / PORTADA -->
+        <section id="inicio">
+            <div>
+                <img src="IMG/rocco_portada.png" alt="Rocco frente a la cueva profunda">
+            </div>
+            <div>
+                <p>CAPÍTULO 0</p>
+                <h1>EL MINERO DE LA CUEVA NARANJA</h1>
+                <p>Acompaña a Rocco y a su guía Nox en una aventura hacia lo más profundo de la mina de Piedra Hueca para salvar a su aldea de la oscuridad eterna.</p>
+                <a href="#capitulo1">► COMENZAR AVENTURA</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: PERSONAJES -->
+        <section id="personajes">
+            <h2>PERSONAJES</h2>
+            <div>
+                <!-- Tarjeta Rocco -->
+                <article>
+                    <img src="IMG/rocco_retrato.png" alt="Rocco el minero">
+                    <h3>ROCCO</h3>
+                    <p>El minero</p>
+                    <p>Protagonista, joven minero valiente y terco de la aldea Piedra Hueca. Siempre lleva puesto su casco naranja y su fiel pico de hierro.</p>
+                </article>
+
+                <!-- Tarjeta Nox -->
+                <article>
+                    <img src="IMG/nox_retrato.png" alt="Nox el murciélago">
+                    <h3>NOX</h3>
+                    <p>El murciélago guía</p>
+                    <p>Compañero e inseparable guía de Rocco. Un murciélago de cueva de pelaje gris azulado y brillantes ojos color naranja que conoce cada rincón subterráneo.</p>
+                </article>
+
+                <!-- Tarjeta Guardián de Lava -->
+                <article>
+                    <img src="IMG/guardian_retrato.png" alt="El Guardián de Lava">
+                    <h3>GUARDIÁN</h3>
+                    <p>De lava</p>
+                    <p>Gigante imponente hecho de roca volcánica y grietas de lava encendida. Protege la entrada al Corazón Naranja y pone a prueba a quienes intentan pasar.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: CAPÍTULO 1 -->
+        <section id="capitulo1">
+            <div>
+                <p>CAPÍTULO 1</p>
+                <h2>1. La luz que se apaga</h2>
+                <p>Una noche en la aldea Piedra Hueca, las luminosas lámparas de cristal que iluminaban cada hogar parpadearon y comenzaron a apagarse una por una, sumiendo todo en penumbras. El anciano de la aldea recordó la antigua leyenda del Corazón Naranja, una joya ancestral escondida en las profundidades de la cueva.</p>
+                <p>Sin dudarlo, Rocco tomó su casco naranja y su pico. Decidido a devolver el brillo a su pueblo, se adentró en la entrada principal de la mina acompañado por el fiel Nox.</p>
+                <a href="#capitulo2">CONTINUAR →</a>
+            </div>
+            <div>
+                <img src="IMG/escena_capitulo1.png" alt="La aldea Piedra Hueca a oscuras">
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: CAPÍTULO 2 -->
+        <section id="capitulo2">
+            <div>
+                <img src="IMG/escena_capitulo2.png" alt="Descenso por los túneles oscuros">
+            </div>
+            <div>
+                <p>CAPÍTULO 2</p>
+                <h2>2. El descenso</h2>
+                <p>El aire se volvía cada vez más cálido a medida que descendían por oscuros túneles hechos de bloques cuadrados. Las antorchas en las paredes apenas iluminaban las vetas de carbón y los cristales naranja opacos que decoraban el camino.</p>
+                <p>Nox volaba al frente indicando los obstáculos en el suelo. Antes de continuar al nivel más profundo, Rocco revisó cuidadosamente que llevaba todo su equipamiento básico:</p>
+                
+                <h3>Equipo del minero (lista):</h3>
+                <ul>
+                    <li>Pico reforzado</li>
+                    <li>Casco con linterna naranja</li>
+                    <li>Antorcha de alta duración</li>
+                </ul>
+
+                <a href="#capitulo3">CONTINUAR →</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: CAPÍTULO 3 (INTERACTIVO) -->
+        <section id="capitulo3">
+            <div>
+                <img src="IMG/escena_guardian.png" alt="El Guardián de Lava bloqueando el paso">
+            </div>
+            <div>
+                <p>CAPÍTULO 3</p>
+                <h2>3. EL GUARDIÁN DE LAVA</h2>
+                <p>Al llegar al fondo de la cueva, un rugido ensordecedor retumbó entre los bloques de piedra. Un enorme Guardián de Lava emergió de un río incandescente bloqueando el camino. "Solo quien elija el túnel correcto demostrará tener la valentía para alcanzar la luz", resonó la voz del gigante.</p>
+                
+                <h3>¿Por cuál túnel seguirá Rocco?</h3>
+                <div>
+                    <button type="button">TÚNEL IZQUIERDO</button>
+                    <button type="button">TÚNEL DERECHO</button>
+                </div>
+
+                <!-- Contenedor del mensaje producido mediante interacción -->
+                <div>
+                    <p>Elige un túnel para continuar la aventura...</p>
+                </div>
+
+                <a href="#final">AVANZAR AL FINAL →</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: FINAL Y CRÉDITOS -->
+        <section id="final">
+            <div>
+                <img src="IMG/escena_final.png" alt="El Corazón Naranja brillando y la luz volviendo a la aldea">
+            </div>
+            <div>
+                <p>¡MISIÓN CUMPLIDA!</p>
+                <h2>FINAL · ¡La luz regresó!</h2>
+                <p>El Guardián de Lava reconoció la valentía de Rocco y se apartó amablemente. Al tocar el Corazón Naranja, una intensa ráfaga de luz dorada recorrió cada túnel hasta emerger en la superficie, encendiendo nuevamente todas las lámparas de la aldea Piedra Hueca. Rocco fue nombrado el nuevo Guardián de la Mina, listo para proteger siempre el brillo de su hogar.</p>
+                <a href="#inicio">↑ VOLVER AL INICIO</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA Y CRÉDITOS -->
+    <footer>
+        <hr>
+        <p>Créditos: historia e ilustraciones originales — Francisco Javier Coronado Contreras (historia) y Gemini (ilustraciones)</p>
+        <div>
+            <a href="Documentos extra/1 Etapa de proyecto.pdf" target="_blank">Enlace 1: Documentación</a>
+            <a href="https://github.com/FanciscoElCORONADO/Proyecto_de_Francisco_Coronado" target="_blank">Enlace 2: Repositorio</a>
+        </div>
+        <p>&copy; 2026 El Minero de la Cueva Naranja. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
