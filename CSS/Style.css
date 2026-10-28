@@ -1,11 +1,5 @@
-/* ==========================================
-   1. IMPORTACIÓN DE FUENTES DE GOOGLE FONTS
-   ========================================== */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Rubik:wght@400;500;700&display=swap');
 
-/* ==========================================
-   2. VARIABLES DE COLOR (Paleta del Proyecto)
-   ========================================== */
 :root {
     --naranja-fuego: #E8731A;
     --naranja-quemado: #B5470E;
@@ -15,9 +9,6 @@
     --beige-polvo: #D8CDBE;
 }
 
-/* ==========================================
-   3. ESTILOS GENERALES Y RESET
-   ========================================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,10 +23,9 @@ body {
     background-color: var(--carbon);
     color: var(--beige-polvo);
     font-family: 'Rubik', Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8; 
 }
 
-/* Títulos y etiquetas con tipografías específicas */
 h1, h2, th {
     font-family: 'Bebas Neue', Impact, sans-serif;
     letter-spacing: 1px;
@@ -45,17 +35,9 @@ p, span, li, a, button {
     font-family: 'Rubik', Arial, sans-serif;
 }
 
-/* ==========================================
-   4. MENÚ DE NAVEGACIÓN FIJO (Responsive)
-   ========================================== */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: var(--carbon);
     border-bottom: 3px solid var(--naranja-quemado);
-    z-index: 1000;
 }
 
 nav {
@@ -90,11 +72,8 @@ nav ul li a:hover {
     color: var(--naranja-fuego);
 }
 
-/* ==========================================
-   5. ESTRUCTURA DE SECCIONES GENERALES
-   ========================================== */
 main {
-    margin-top: 70px; /* Espacio para el menú fijo */
+    margin-top: 70px; 
 }
 
 section {
@@ -110,15 +89,15 @@ section {
     gap: 30px;
 }
 
-/* ==========================================
-   6. ESTILOS POR SECCIÓN (Boceto y Maquetación)
-   ========================================== */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* SECCIÓN 1: INICIO / PORTADA */
 #inicio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
     align-items: center;
     gap: 40px;
     text-align: left;
@@ -126,7 +105,7 @@ section {
 
 #inicio img {
     width: 100%;
-    max-width: 650px; /* Imagen principal más grande */
+    max-width: 650px;
     border: 4px solid var(--naranja-quemado);
     border-radius: 6px;
 }
@@ -143,7 +122,6 @@ section {
     margin-bottom: 20px;
 }
 
-/* Botones principales estilo agresivo */
 .btn-aventura, a[href^="#capitulo"], a[href="#final"], button {
     display: inline-block;
     background-color: var(--naranja-fuego);
@@ -163,7 +141,6 @@ section {
     color: var(--beige-polvo);
 }
 
-/* SECCIÓN 2: PERSONAJES (Tarjetas en columnas) */
 #personajes {
     text-align: center;
     max-width: 1100px;
@@ -195,7 +172,19 @@ section {
     height: 200px;
     object-fit: cover;
     border-radius: 4px;
-    margin-bottom: 15px
+    margin-bottom: 15px;  
+}
+
+#personajes article h3 {
+    color: var(--naranja-fuego);
+    font-size: 1.8rem;
+}
+
+#personajes article p:nth-of-type(1) {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--gris-ceniza);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -219,6 +208,7 @@ footer div {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -228,4 +218,28 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta el menú estándar en móviles para mantener orden */
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #personajes > div {
+        grid-template-columns: 1fr; /* Pasa las tarjetas de personajes a una sola columna */
+    }
+
+    section {
+        padding: 50px 15px;
+        min-height: auto;
+    }
+
+    #inicio h1 {
+        font-size: 2.5rem;
+    }
 }
