@@ -1,2 +1,4 @@
-
-GitHub: https://github.com/FanciscoElCORONADO/Proyecto_de_Francisco_Coronado
+# Archivos de PowerPoint que Git debe ignorar
+*.pptx
+~$*.pptx
+Documentos extra/
