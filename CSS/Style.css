@@ -244,3 +244,64 @@ footer a:hover {
         font-size: 3rem;
     }
 }
+
+.paginacion-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--carbon);
+    border: 2px solid var(--gris-piedra);
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1.6);
+    z-index: 2000;
+    gap: 15px;
+}
+
+.paginacion-flotante .btn-flecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--naranja-fuego);
+    color: var(--carbon);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.paginacion-flotante .btn-flecha:hover {
+    background-color: var(--naranja-quemado);
+    color: var(--beige-polvo);
+}
+
+.paginacion-flotante .texto-pag {
+    font-family: 'Bebas Neue', Impact, sans-serif;
+    font-size: 1.3rem;
+    color: var(--beige-polvo);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .paginacion-flotante {
+        bottom: 10px;
+        right: 10px;
+        padding: 6px 10px;
+        gap: 10px;
+    }
+
+    .paginacion-flotante .btn-flecha {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .paginacion-flotante .texto-pag {
+        font-size: 1.1rem;
+    }
+}
